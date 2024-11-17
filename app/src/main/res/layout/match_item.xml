@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardView"
+    android:layout_height="wrap_content">  <!-- Changed from match_parent to wrap_content -->
+
+    <LinearLayout
+        android:background="#B6FFA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp">
+
+        <!-- TextViews displaying match information -->
+        <TextView
+            android:id="@+id/team1_vs_team2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team1 vs Team2"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue: Location"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/stadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stadium: Wankhede"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="timing: 01:00-04:00 PM"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 12/12/2024"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/weatherStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather: Sunny"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark"/>
+        <TextView
+            android:id="@+id/price"
+            android:text="price: \u20b92000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <!-- Horizontal LinearLayout to align buttons side by side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Book Stadium Button -->
+            <Button
+                android:id="@+id/book"
+                android:backgroundTint="#37AFE1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Book Stadium" />
+
+            <!-- Cancel Stadium Button -->
+            <Button
+                android:id="@+id/cancel"
+                android:backgroundTint="#FA4032"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="Cancel Booking" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

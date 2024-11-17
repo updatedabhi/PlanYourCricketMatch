@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cricbg"
+    android:padding="16dp"
+    tools:context=".AddMatchFragment">
+
+    <!-- Match Name EditText -->
+    <EditText
+        android:id="@+id/matchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Match Name"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:layout_marginTop="16dp" />
+
+    <!-- Team EditText -->
+    <EditText
+        android:id="@+id/team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Team"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:layout_marginTop="16dp" />
+
+    <!-- Against Team EditText -->
+    <EditText
+        android:id="@+id/againstTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Against Team"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:layout_marginTop="16dp" />
+
+    <!-- Date EditText -->
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:textColorHint="@color/black"
+        android:focusable="false"
+        android:layout_marginTop="16dp" />
+
+    <!-- Stadium Spinner -->
+    <Spinner
+        android:id="@+id/stadium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Slot Spinner -->
+    <Spinner
+        android:id="@+id/slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Location EditText -->
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:layout_marginTop="16dp" />
+
+    <!-- Format EditText -->
+    <EditText
+        android:id="@+id/format"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Format"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:layout_marginTop="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Match"
+        android:textColor="@color/white"
+        android:backgroundTint="#00FF9C"
+        android:layout_marginTop="32dp" />
+</LinearLayout>
